@@ -56,6 +56,24 @@
 }
 
 .menu__check:checked ~ .menu{
-    right: calc(50% - 590px) !important;
+    right: calc(50% - 590px);
     transition: right 1s;
+}
+
+@media(max-width: 1200px) and (min-width: 1041px){
+    .menu__check:checked ~ .menu {
+        right: calc(50% - 512px);
+    }
+}
+
+@media(max-width: 1040px){
+    .menu__check:checked ~ .menu {
+        right: calc(50% - 374px);
+    }
+}
+
+@media(max-width: 767px){
+    .menu__check:checked ~ .menu {
+        right: 0;
+    }
 }
